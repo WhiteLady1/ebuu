@@ -1,0 +1,107 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 600;;
+}
+section{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: #ffcc67;
+}
+.listMenu{
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.listMenu li{
+  margin: 10px;
+}
+.content{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.usp{
+  display: flex;
+  flex-direction: column;
+}
+.banner{
+  text-align: center;
+}
+.linksList{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+}
+.linksList img{
+  border-radius: 50%;
+}
+.linksList p{
+  text-align: center;
+}
+.reviewsFaq{
+  display: flex;
+  justify-content: space-between;
+}
+.reviewsFaq p{
+  font-weight: 400;
+  font-style: italic;
+}
+.reviews{
+  padding: 10px;
+  width: 100%;
+}
+.reviews a{
+  display:block;
+  text-align: center;
+  padding: 10px;
+}
+.review{
+  display: flex;
+  align-items: center;
+}
+.review img{
+  width: 25%;
+  border-radius: 50%;
+}
+.faqs{
+  padding-left: 30px;
+  width: 100%;
+}
+.faqs a{
+  display:block;
+  text-align: center;
+  padding: 10px;
+}
+.faq{
+  display: flex;
+  flex-direction: column;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+}
+.products img{
+    border: 1px solid rgba(172, 172, 172, 0.644);
+}
+.productsPictures{
+  display: flex;
+}
+.butonEshop{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
