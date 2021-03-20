@@ -1,114 +1,179 @@
-body{
-  font-family: 'Advent Pro', sans-serif;
-}
-html{
+html {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
 }
-body{
+body {
+  font-family: 'Advent Pro', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Open Sans",sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   line-height: 1.5;
-  font-weight: 600;;
+  font-weight: 600;
   width: 80%;
 }
-section{
+.logo {
+  background-image: url('images/POZADÍ\ ZA\ LOGO.png');
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
-a:hover{
+a:hover {
   color: #ffcc67;
 }
-.listMenu{
+.menu {
+  border-bottom: 1px solid rgb(169, 219, 210);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 0;
+}
+.listMenu {
   display: flex;
   list-style: none;
   padding: 0;
 }
-.listMenu li{
+.listMenu li {
   margin: 10px;
+  margin-bottom: 0;
 }
-.content{
+.content {
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.usp{
+.usp {
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
-.banner{
+.banner {
   text-align: center;
 }
-.linksList{
+.linksList {
   display: flex;
-  justify-content: space-evenly;
   list-style: none;
   padding: 0;
 }
-.linksList img{
-  border-radius: 50%;
+.linksList img {
+  width: 100%;
 }
-.linksList p{
+.linksList p {
   text-align: center;
 }
-.reviewsFaq{
+.links-list__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links-list__button a {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.how-to-work{
+display: flex;
+}
+.banner-img{
+  width: 50%;
+}
+.banner__content{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240,217,150);
+}
+.one-function{
+  display: flex;
+  padding: 10px;
+}
+.one-function img{
+  width: 30%;
+  padding: 10px;
+}
+.one-function p{
+  padding-top: 10px;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  border-radius: 34% 66% 43% 57% / 48% 47% 53% 52% ;
+  background-color: rgb(240,217,150);
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.button a{
+  padding: 20px;
+  font-size: 26px;
+}
+.button a:hover{
+  color: rgb(169, 219, 210);
+}
+.reviewsFaq {
   display: flex;
   justify-content: space-between;
 }
-.reviewsFaq p{
+.reviewsFaq p {
   font-weight: 400;
   font-style: italic;
 }
-.reviews{
+.reviews {
   padding: 10px;
   width: 100%;
 }
-.reviews a{
-  display:block;
+.reviews a {
+  display: block;
   text-align: center;
   padding: 10px;
 }
-.review{
+.review {
   display: flex;
   align-items: center;
 }
-.review img{
+.review img {
   width: 25%;
   border-radius: 50%;
 }
-.faqs{
+.faqs {
   padding-left: 30px;
   width: 100%;
 }
-.faqs a{
-  display:block;
+.faqs a {
+  display: block;
   text-align: center;
   padding: 10px;
 }
-.faq{
+.faq {
   display: flex;
   flex-direction: column;
 }
-.products{
+.products {
   display: flex;
   flex-wrap: wrap;
 }
-.products img{
-    border: 1px solid rgba(172, 172, 172, 0.644);
+.products img {
+  border: 1px solid rgba(172, 172, 172, 0.644);
 }
-.productsPictures{
+.productsPictures {
   display: flex;
 }
-.butonEshop{
+.butonEshop {
   width: 100%;
   text-align: center;
   padding: 10px;
