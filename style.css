@@ -138,34 +138,56 @@ display: flex;
 .button a:hover{
   color: rgb(169, 219, 210);
 }
-.reviewsFaq {
+.reviews-faq {
   display: flex;
   justify-content: space-between;
 }
-.reviewsFaq p {
-  font-weight: 400;
-  font-style: italic;
+.reviews-faq p {
+  font-weight: 600;
 }
 .reviews {
-  padding: 10px;
-  width: 100%;
-}
-.reviews a {
-  display: block;
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: rgb(240,217,150);
 }
 .review {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 .review img {
   width: 25%;
-  border-radius: 50%;
+}
+.coment{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.coment p{
+  margin: 0;
+}
+.invert{
+  color: white;
+  margin: 0;
+}
+.invert-button{
+  background-color: white;
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
 }
 .faqs {
-  padding-left: 30px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 10px;
+  background-color: rgb(169, 219, 210);
 }
 .faqs a {
   display: block;
