@@ -11,7 +11,6 @@ body{
   font-size: 12px;
   line-height: 1.5;
   font-weight: 600;
-
 }
 .header{
   width: 100%;
@@ -233,4 +232,24 @@ text-align: center;
 .valuation-img img{
   width: 20%;
   padding: 20px;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.newsletter{
+  background-color: #e0e0e0;
+  padding: 25px 20px;
+  margin-top: 60px;
+}
+.columns{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  background-color: #f7f7f7;
+  border-top-color: #e7e7e7;
 }
