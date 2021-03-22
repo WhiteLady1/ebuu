@@ -1,10 +1,10 @@
 html {
   box-sizing: border-box;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   scroll-behavior: smooth;
 }
-body{
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,22 +13,22 @@ body{
   line-height: 1.5;
   font-weight: 600;
 }
-.header{
+.header {
   width: 100%;
   text-transform: uppercase;
 }
-.body{
+.body {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
 }
-.font{
+.font {
   font-family: 'Advent Pro', sans-serif;
   font-size: 17px;
   font-weight: 800;
 }
- .font-h2{
+.font-h2 {
   font-size: 30px;
   font-family: 'Advent Pro', sans-serif;
   font-weight: 800;
@@ -83,16 +83,20 @@ a:hover {
 .banner {
   text-align: center;
 }
+.links {
+  padding: 0 100px 0 100px;
+}
 .linksList {
   display: flex;
   list-style: none;
   padding: 0;
 }
 .linksList img {
-  width: 100%;
+  width: 80%;
 }
 .linksList p {
   text-align: center;
+  text-transform: uppercase;
 }
 .links-list__button {
   display: flex;
@@ -102,47 +106,57 @@ a:hover {
 .links-list__button a {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  align-items: center;
+}
+.links-list__button img {
+  background-color:white;
+  border-radius: 64% 36% 50% 50% / 65% 38% 62% 35% ;
+  transition:background-color 300ms ease-out 0s;
+}
+.links-list__button img:hover {
+  background-color: rgb(240, 217, 150);
+  border-radius: 64% 36% 50% 50% / 65% 38% 62% 35% ;
+  transition:background-color 300ms ease-out 0s;
 }
 
-.how-to-work{
-display: flex;
+.how-to-work {
+  display: flex;
 }
-.banner__content{
+.banner__content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgb(240,217,150);
+  background-color: rgb(240, 217, 150);
   padding: 20px 20px 20px 10px;
 }
-.one-function{
+.one-function {
   display: flex;
   align-items: center;
   padding: 10px;
 }
-.one-function img{
+.one-function img {
   width: 15%;
   padding: 20px;
 }
-.one-function p{
+.one-function p {
   margin: 0;
   flex-basis: 70%;
 }
-.button{
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 300px;
   height: 100px;
-  border-radius: 34% 66% 43% 57% / 48% 47% 53% 52% ;
-  background-color: rgb(240,217,150);
+  border-radius: 34% 66% 43% 57% / 48% 47% 53% 52%;
+  background-color: rgb(240, 217, 150);
   margin-top: 10px;
   margin-bottom: 25px;
 }
-.button a{
+.button a {
   padding: 20px;
 }
-.button a:hover{
+.button a:hover {
   color: rgb(169, 219, 210);
 }
 .reviews-faq {
@@ -159,7 +173,7 @@ display: flex;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 10px;
-  background-color: rgb(243,195,203);
+  background-color: rgb(243, 195, 203);
 }
 .review {
   display: flex;
@@ -169,20 +183,20 @@ display: flex;
 .review img {
   width: 25%;
 }
-.coment{
+.coment {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   padding-left: 10px;
 }
-.coment p{
+.coment p {
   margin: 0;
 }
-.invert{
+.invert {
   color: white;
   margin: 0;
 }
-.invert-button{
+.invert-button {
   background-color: white;
   width: 180px;
   height: 50px;
@@ -194,7 +208,7 @@ display: flex;
   flex-direction: column;
   align-items: flex-end;
   width: 50%;
-  padding:20px 20px 0 20px;
+  padding: 20px 20px 0 20px;
   background-color: rgb(169, 219, 210);
 }
 .faqs a {
@@ -222,29 +236,29 @@ display: flex;
   padding: 10px;
   margin: 10px;
 }
-.valuation{
+.valuation {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.valuation-img{
-text-align: center;
+.valuation-img {
+  text-align: center;
 }
-.valuation-img img{
+.valuation-img img {
   width: 20%;
   padding: 20px;
 }
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.newsletter{
+.newsletter {
   background-color: #e0e0e0;
   padding: 25px 20px;
   margin-top: 60px;
 }
-.columns{
+.columns {
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
@@ -254,7 +268,7 @@ text-align: center;
   background-color: #f7f7f7;
   border-top-color: #e7e7e7;
 }
-.arrow{
+.arrow {
   display: none;
   position: fixed;
   bottom: 5px;
@@ -262,12 +276,12 @@ text-align: center;
   border: none;
   background-color: rgba(255, 255, 255, 0);
 }
-.iconify{
-  color: rgb(240,217,150);
+.iconify {
+  color: rgb(240, 217, 150);
   font-size: 40px;
   margin: 5px;
 }
-.iconify:hover{
+.iconify:hover {
   color: white;
   background-color: rgb(169, 219, 210);
   border: 1px solid rgb(169, 219, 210);
