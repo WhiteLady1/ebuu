@@ -3,8 +3,7 @@ html {
   display: flex;
   justify-content: center;
 }
-body {
-  
+body{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +11,15 @@ body {
   font-size: 12px;
   line-height: 1.5;
   font-weight: 600;
+
+}
+.header{
+  width: 100%;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 80%;
 }
 .font{
@@ -99,14 +107,13 @@ a:hover {
 .how-to-work{
 display: flex;
 }
-.banner-img{
-  width: 60%;
-}
-.banner__content{
+
+ .banner__content{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background-color: rgb(240,217,150);
-  padding-right: 10px;
+  padding: 20px 20px 20px 10px;
 }
 .one-function{
   display: flex;
@@ -114,12 +121,12 @@ display: flex;
   padding: 10px;
 }
 .one-function img{
-  width: 30%;
-  height: 50%;
-  padding: 10px;
+  width: 20%;
+  padding: 20px;
 }
 .one-function p{
   margin: 0;
+  flex-basis: 70%;
 }
 .button{
   display: flex;
@@ -148,7 +155,6 @@ display: flex;
 .reviews {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 10px;
@@ -165,6 +171,7 @@ display: flex;
 .coment{
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
   padding-left: 10px;
 }
 .coment p{
@@ -179,6 +186,7 @@ display: flex;
   width: 180px;
   height: 50px;
   font-size: 20px;
+  align-self: flex-end;
 }
 .faqs {
   display: flex;
@@ -213,4 +221,16 @@ display: flex;
   text-align: center;
   padding: 10px;
   margin: 10px;
+}
+.valuation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.valuation-img{
+text-align: center;
+}
+.valuation-img img{
+  width: 20%;
+  padding: 20px;
 }
