@@ -9,10 +9,32 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
+  color: #443C3A;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 600;
 }
+/*----------- Šipka pro odkaz na horní část stránky -------------*/
+.arrow {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.iconify {
+  color: rgb(240, 217, 150);
+  font-size: 40px;
+  margin: 5px;
+}
+.iconify:hover {
+  color: white;
+  background-color: rgb(169, 219, 210);
+  border: 1px solid rgb(169, 219, 210);
+  border-radius: 50%;
+}
+/*--------------styly hlavní----------------*/
 .header {
   width: 100%;
   text-transform: uppercase;
@@ -29,7 +51,7 @@ body {
   font-weight: 800;
 }
 .font-h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Advent Pro', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
@@ -53,6 +75,7 @@ a {
 a:hover {
   color: #ffcc67;
 }
+/*--------------Logo + Menu ------------*/
 .menu {
   border-bottom: 1px solid rgb(169, 219, 210);
   display: flex;
@@ -61,14 +84,10 @@ a:hover {
   padding-bottom: 0;
 }
 .listMenu {
-  display: flex;
-  list-style: none;
-  padding: 0;
+  display: none;
 }
-.listMenu li {
-  margin: 10px;
-  margin-bottom: 0;
-}
+
+/*------------- Hlavní obsah -------------*/
 .content {
   width: 80%;
   display: flex;
@@ -80,19 +99,25 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
+/*--------------- Hlavní baner -------------*/
 .banner {
   text-align: center;
+  display: flex;
 }
-.links {
-  padding: 0 100px 0 100px;
+.banner img{
+  width: 200px;
 }
-.linksList {
+/*------------- Prokliky do eshopu ---------------*/
+.links{
+  padding-top: 20px;
+}
+.linksList {  
   display: flex;
   list-style: none;
   padding: 0;
 }
 .linksList img {
-  width: 80%;
+  width: 100px;
 }
 .linksList p {
   text-align: center;
@@ -100,7 +125,6 @@ a:hover {
 }
 .links-list__button {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 .links-list__button a {
@@ -108,21 +132,13 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
-.links-list__button img {
-  background-color:white;
-  border-radius: 64% 36% 50% 50% / 65% 38% 62% 35% ;
-  transition:background-color 300ms ease-out 0s;
-}
-.links-list__button img:hover {
-  background-color: rgb(240, 217, 150);
-  border-radius: 64% 36% 50% 50% / 65% 38% 62% 35% ;
-  transition:background-color 300ms ease-out 0s;
-}
 
+/*--------- Jak to funguje ----------*/
 .how-to-work {
   display: flex;
 }
 .banner__content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -131,23 +147,25 @@ a:hover {
 }
 .one-function {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 10px;
 }
 .one-function img {
-  width: 15%;
+  width: 30%;
   padding: 20px;
 }
 .one-function p {
   margin: 0;
   flex-basis: 70%;
+  text-align: center;
 }
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 100px;
+  width: 240px;
+  height: 70px;
   border-radius: 34% 66% 43% 57% / 48% 47% 53% 52%;
   background-color: rgb(240, 217, 150);
   margin-top: 10px;
@@ -159,9 +177,12 @@ a:hover {
 .button a:hover {
   color: rgb(169, 219, 210);
 }
+/*------------- Recenze a FAQ -------------*/
 .reviews-faq {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .reviews-faq p {
   font-weight: 600;
@@ -169,7 +190,7 @@ a:hover {
 .reviews {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 10px;
@@ -201,14 +222,14 @@ a:hover {
   width: 180px;
   height: 50px;
   font-size: 20px;
-  align-self: flex-end;
+  align-self: center;
 }
 .faqs {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 50%;
-  padding: 20px 20px 0 20px;
+  width: 100%;
+  padding: 20px 10px 0 20px;
   background-color: rgb(169, 219, 210);
 }
 .faqs a {
@@ -220,15 +241,10 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
+/*------------ Produkty ---------------*/
+
 .products {
-  display: flex;
-  flex-wrap: wrap;
-}
-.products img {
-  border: 1px solid rgba(172, 172, 172, 0.644);
-}
-.productsPictures {
-  display: flex;
+  display: none;
 }
 .butonEshop {
   width: 100%;
@@ -236,54 +252,156 @@ a:hover {
   padding: 10px;
   margin: 10px;
 }
+/*------------ Ocenění --------------*/
 .valuation {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .valuation-img {
   text-align: center;
 }
 .valuation-img img {
-  width: 20%;
+  width: 50%;
   padding: 20px;
 }
+/*---------- Patička -----------*/
 .footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  display: none
 }
-.newsletter {
-  background-color: #e0e0e0;
-  padding: 25px 20px;
-  margin-top: 60px;
+
+
+@media (min-width: 600px){
+  
+  /*---------bude v produkci ---------*/
+  section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .font-h2 {
+    font-size: 30px;
+  }
+  /* proklik do eshopu*/
+  .linksList img {
+    width: 80%;
+  }
+  .links-list__button img {
+    background-color:white;
+    border-radius: 64% 36% 50% 50% / 65% 38% 62% 35% ;
+    transition:background-color 300ms ease-out 0s;
+  }
+  .links-list__button img:hover {
+    background-color: rgb(240, 217, 150);
+    border-radius: 64% 36% 50% 50% / 65% 38% 62% 35% ;
+    transition:background-color 300ms ease-out 0s;
+  }
+  /* jak to funguje */
+  
+  .one-function {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+  .one-function img {
+    width: 15%;
+  }
+  .one-function p {
+    text-align: left;
+  }
+  .button {
+    width: 300px;
+    height: 100px;
+  }
+  /* recenze a FAQ*/
+ 
+  .invert-button {
+    align-self: center;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  /* Ocenění*/
+  .valuation-img img {
+    width: 20%;
+  }
+  /*----------- Nebude v kódu ----------*/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .newsletter {
+    background-color: #e0e0e0;
+    padding: 25px 20px;
+    margin-top: 60px;
+  }
+  .columns {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    background-color: #f7f7f7;
+    border-top-color: #e7e7e7;
+  }
+  .listMenu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  .listMenu li {
+    margin: 10px;
+    margin-bottom: 0;
+  }
+  .banner img{
+    width: 100%;
+  }
+  
 }
-.columns {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-top-width: 1px;
-  border-top-style: solid;
-  background-color: #f7f7f7;
-  border-top-color: #e7e7e7;
-}
-.arrow {
-  display: none;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0);
-}
-.iconify {
-  color: rgb(240, 217, 150);
-  font-size: 40px;
-  margin: 5px;
-}
-.iconify:hover {
-  color: white;
-  background-color: rgb(169, 219, 210);
-  border: 1px solid rgb(169, 219, 210);
-  border-radius: 50%;
+
+@media (min-width: 1200px){
+  /*------- Bude v produkci-----------*/
+  .banner-img{
+    width: 100%;
+    background-image: url('images/BANNER\ POD\ _JAK\ TO\ FUNGUJE_.png');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover
+  }
+  .linksList img {
+    width: 200px;
+  }
+  .reviews-faq {
+    flex-direction: row;
+    align-items: unset;
+  }
+  .reviews {
+    width: 50%;
+  }
+  .faqs {
+    width: 50%;
+    padding: 20px 20px 0 20px;
+  }
+  .invert-button {
+    align-self: flex-end;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  /*------- Nebude v kódu ---------*/
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .products img {
+    border: 1px solid rgba(172, 172, 172, 0.644);
+  }
+  .productsPictures {
+    display: flex;
+  }
 }
