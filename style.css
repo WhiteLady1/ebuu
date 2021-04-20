@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
-  color: #443C3A;
+  color: #443c3a;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 600;
@@ -94,24 +94,19 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
-.usp {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
 /*--------------- Hlavní baner -------------*/
 .banner {
   text-align: center;
   display: flex;
 }
-.banner img{
+.banner img {
   width: 200px;
 }
 /*------------- Prokliky do eshopu ---------------*/
-.links{
+.links {
   padding-top: 20px;
 }
-.linksList {  
+.linksList {
   display: flex;
   list-style: none;
   padding: 0;
@@ -268,14 +263,12 @@ a:hover {
 }
 /*---------- Patička -----------*/
 .footer {
-  display: none
+  display: none;
 }
 
-
-@media (min-width: 600px){
-  
+@media (min-width: 600px) {
   /*---------bude v produkci ---------*/
-  section{
+  section {
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -287,17 +280,17 @@ a:hover {
     width: 80%;
   }
   .links-list__button img {
-    background-color:white;
-    border-radius: 64% 36% 50% 50% / 65% 38% 62% 35% ;
-    transition:background-color 300ms ease-out 0s;
+    background-color: white;
+    border-radius: 64% 36% 50% 50% / 65% 38% 62% 35%;
+    transition: background-color 300ms ease-out 0s;
   }
   .links-list__button img:hover {
     background-color: rgb(240, 217, 150);
-    border-radius: 64% 36% 50% 50% / 65% 38% 62% 35% ;
-    transition:background-color 300ms ease-out 0s;
+    border-radius: 64% 36% 50% 50% / 65% 38% 62% 35%;
+    transition: background-color 300ms ease-out 0s;
   }
   /* jak to funguje */
-  
+
   .one-function {
     display: flex;
     flex-direction: row;
@@ -315,14 +308,14 @@ a:hover {
     height: 100px;
   }
   /* recenze a FAQ*/
- 
+
   .invert-button {
     align-self: center;
     width: 180px;
     height: 50px;
     font-size: 20px;
   }
-  
+
   /* Ocenění*/
   .valuation-img img {
     width: 20%;
@@ -357,21 +350,36 @@ a:hover {
     margin: 10px;
     margin-bottom: 0;
   }
-  .banner img{
+  .banner img {
     width: 100%;
   }
-  
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   /*------- Bude v produkci-----------*/
-  .banner-img{
-    width: 100%;
-    background-image: url('images/BANNER\ POD\ _JAK\ TO\ FUNGUJE_.png');
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover
+  .banner__content {
+    position: relative;
+    margin: 0px;
+    list-style-type: none;
+    padding: 45px 40px 35px 50%;
+    line-height: 1.8;
+    margin-top: 30px;
   }
+  .banner__content::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    content: '';
+    background: url('images/BANNER\ POD\ _JAK\ TO\ FUNGUJE_.png') center center
+      no-repeat;
+    background-size: cover;
+    /*background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover*/
+  }
+
   .linksList img {
     width: 200px;
   }
